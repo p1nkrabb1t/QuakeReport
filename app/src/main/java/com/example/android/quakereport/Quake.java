@@ -2,7 +2,7 @@ package com.example.android.quakereport;
 
 public class Quake {
 
-     // decimal value
+    // decimal value
     private double mMagnitude;
 
     // String value
@@ -10,7 +10,6 @@ public class Quake {
 
     // Long Integer value
     private long mDate;
-
 
 
     /**
