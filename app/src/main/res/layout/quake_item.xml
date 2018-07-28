@@ -9,17 +9,21 @@
 
         <TextView
             android:id="@+id/magnitude"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:layout_weight="1"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/magnitude_circle"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
             tools:text="5.3" />
 
         <TextView
             android:id="@+id/place_offset"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:autoLink="map"
+            android:layout_marginLeft="16dp"
             android:layout_weight="1"
             tools:text="address..." />
 
@@ -35,14 +39,13 @@
             android:id="@+id/date"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:autoLink="phone"
             android:layout_weight="1"
             tools:text="4th, Jan" />
+
         <TextView
             android:id="@+id/time"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:autoLink="phone"
             android:layout_weight="1"
             tools:text="15:00" />
     </LinearLayout>

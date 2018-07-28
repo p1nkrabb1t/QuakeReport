@@ -56,7 +56,7 @@ public final class QueryUtils {
                 JSONObject quakeEvent = jsonArray.getJSONObject(i);
                 JSONObject properties = quakeEvent.getJSONObject("properties");
 
-                String magnitude = properties.getString("mag");
+                double magnitude = properties.getDouble("mag");
                 String location = properties.getString("place");
                 long time = properties.getLong("time");
 //                Date dateObject = new Date(time);

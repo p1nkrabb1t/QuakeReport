@@ -3,7 +3,7 @@ package com.example.android.quakereport;
 public class Quake {
 
      // decimal value
-    private String mMagnitude;
+    private double mMagnitude;
 
     // String value
     private String mPlace;
@@ -16,7 +16,7 @@ public class Quake {
     /**
      * Constructs a new object containing magnitude, place and date
      */
-    public Quake(String Magnitude, String Place, long Date) {
+    public Quake(double Magnitude, String Place, long Date) {
         mMagnitude = Magnitude;
         mPlace = Place;
         mDate = Date;
@@ -25,7 +25,7 @@ public class Quake {
 
 
     //get the magnitude
-    public String getMagnitude() {
+    public double getMagnitude() {
         return mMagnitude;
     }
 
