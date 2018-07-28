@@ -9,14 +9,14 @@ public class Quake {
     private String mPlace;
 
     // Long Integer value
-    private String mDate;
+    private long mDate;
 
 
 
     /**
      * Constructs a new object containing magnitude, place and date
      */
-    public Quake(String Magnitude, String Place, String Date) {
+    public Quake(String Magnitude, String Place, long Date) {
         mMagnitude = Magnitude;
         mPlace = Place;
         mDate = Date;
@@ -35,7 +35,7 @@ public class Quake {
     }
 
     //get the date the earthquake happened
-    public String getDate() {
+    public long getDate() {
         return mDate;
     }
 

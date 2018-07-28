@@ -16,6 +16,14 @@
             tools:text="5.3" />
 
         <TextView
+            android:id="@+id/place_offset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autoLink="map"
+            android:layout_weight="1"
+            tools:text="address..." />
+
+        <TextView
             android:id="@+id/place"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -30,6 +38,13 @@
             android:autoLink="phone"
             android:layout_weight="1"
             tools:text="4th, Jan" />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autoLink="phone"
+            android:layout_weight="1"
+            tools:text="15:00" />
     </LinearLayout>
 
 

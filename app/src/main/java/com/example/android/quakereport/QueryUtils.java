@@ -5,8 +5,7 @@ import android.util.Log;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
 
 import java.util.ArrayList;
 
@@ -59,13 +58,13 @@ public final class QueryUtils {
 
                 String magnitude = properties.getString("mag");
                 String location = properties.getString("place");
-                String time = properties.getString("time");
-                long timeInMilliseconds = 1454124312220L;
-                Date dateObject = new Date(timeInMilliseconds);
-                SimpleDateFormat dateFormatter = new SimpleDateFormat("MMM DD, yyyy");
-                String dateToDisplay = dateFormatter.format(dateObject);
+                long time = properties.getLong("time");
+//                Date dateObject = new Date(time);
+//                SimpleDateFormat dateFormatter = new SimpleDateFormat("MMM DD, yyyy");
+//                String dateToDisplay = dateFormatter.format(dateObject);
 
-                Quake earthquake = new Quake(magnitude,location,dateToDisplay);
+
+                Quake earthquake = new Quake(magnitude,location,time);
                 earthquakes.add(earthquake);
             }
 
