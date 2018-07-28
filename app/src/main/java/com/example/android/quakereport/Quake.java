@@ -11,14 +11,17 @@ public class Quake {
     // Long Integer value
     private long mDate;
 
+    // String value
+    private String mUrl;
 
     /**
      * Constructs a new object containing magnitude, place and date
      */
-    public Quake(double Magnitude, String Place, long Date) {
+    public Quake(double Magnitude, String Place, long Date, String Url) {
         mMagnitude = Magnitude;
         mPlace = Place;
         mDate = Date;
+        mUrl = Url;
 
     }
 
@@ -38,5 +41,9 @@ public class Quake {
         return mDate;
     }
 
+    //get the web address
+    public String getUrl() {
+        return mUrl;
+    }
 
 }

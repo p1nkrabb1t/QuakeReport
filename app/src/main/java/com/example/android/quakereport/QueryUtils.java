@@ -60,12 +60,9 @@ public final class QueryUtils {
                 double magnitude = properties.getDouble("mag");
                 String location = properties.getString("place");
                 long time = properties.getLong("time");
-//                Date dateObject = new Date(time);
-//                SimpleDateFormat dateFormatter = new SimpleDateFormat("MMM DD, yyyy");
-//                String dateToDisplay = dateFormatter.format(dateObject);
+                String url = properties.getString("url");
 
-
-                Quake earthquake = new Quake(magnitude, location, time);
+                Quake earthquake = new Quake(magnitude, location, time, url);
                 earthquakes.add(earthquake);
             }
 

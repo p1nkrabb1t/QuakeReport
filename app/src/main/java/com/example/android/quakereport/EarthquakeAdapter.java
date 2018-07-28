@@ -99,7 +99,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Quake> {
         return listItemView;
     }
 
-    ////////////////////////////////
+    //update the background colour of the magnitude depending on the severity
     public int getMagnitudeColor(double magnitude) {
         int colourID;
         int magFloor = (int) Math.floor(magnitude);
