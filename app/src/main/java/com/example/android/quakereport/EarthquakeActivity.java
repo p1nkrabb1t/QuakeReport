@@ -121,7 +121,7 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderManag
     @Override
     public void onLoadFinished(Loader<List<Quake>> loader, List<Quake> earthquakeInfo) {
         progress.setVisibility(View.GONE);
-        test.setText("Fuck you!");
+        test.setText("No Results!");
         // Clear the adapter of previous earthquake data
         mAdapter.clear();
 
