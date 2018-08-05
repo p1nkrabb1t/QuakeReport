@@ -85,7 +85,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Quake> {
 
         // Find and update the TextView in the quake_item.xml layout with the date
         TextView dateTextView = (TextView) listItemView.findViewById(R.id.date);
-        SimpleDateFormat dateFormatter = new SimpleDateFormat("LLL DD, yyyy");
+        SimpleDateFormat dateFormatter = new SimpleDateFormat("MMM dd, yyyy");
         String dateToDisplay = dateFormatter.format(dateObject);
         dateTextView.setText(String.valueOf(dateToDisplay));
 
